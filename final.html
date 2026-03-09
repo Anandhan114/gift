@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday card</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS for the exit button */
+        .exit-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            
+            /* CHANGE: Button background set to white */
+            background-color: #ffffff;
+            
+            /* CHANGE: Text color set to a dark grey for readability */
+            color: #333333;
+            
+            /* CHANGE: Added a light gray border to define the button's edges */
+            border: 1px solid #cccccc;
+            
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            z-index: 1000;
+            
+            /* Add a subtle transition for smooth hover effects */
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect (what happens when the mouse is over the button) */
+        .exit-btn:hover {
+            /* CHANGE: Slightly darker white (light gray) on hover */
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/ZUiY.gif" alt="stars" class="star">
+    <img src="images/5l03.gif" alt="ballon" class="ballon">
+    <div class="container">
+        <div class="birthdayCard">
+            <div class="cardFront">
+                <div class="front-text">
+                    <h3 class="happy">HAPPY</h3>
+                    <h2 class="bday">BIRTHDAY</h2>
+                    <h3 class="toyou">to you!</h3>
+                </div>
+                <div class="wrap-deco">
+                    <div class="decorations"></div>
+                    <div class="decorationsTwo"></div>
+                </div>
+                <div class="wrap-decoTwo">
+                    <div class="decorations"></div>
+                    <div class="decorationsThree"></div>
+                </div>
+                <div class="plate">
+                    <div class="cake"></div>
+                    <div class="flame"></div>
+                </div>
+            </div>
+            <div class="cardInside">
+                <div class="img">
+                    <img src="images/WhatsApp Image 2026-03-08 at 1.27.02 PM.jpeg" alt="Brotherpic" class="bdyboy">
+                    <img src="images/6ob.gif" alt="confetti" class="confetti">
+                </div>
+                <div class="inside-text">
+                    <h3 class="happy">HAPPY</h3>
+                    <h2 class="bday">BIRTHDAY</h2>
+                    <h3 class="toyou">to you!</h3>
+                </div>
+                <div class="wishes">
+                    <p>Dear Angel Chechi,</p>
+                    <p>Happy birthday!! I hope your day is filled with lots of love and laughter! May all of your
+                        birthday
+                        wishes come true.</p>
+                    <p class="name">S.E from kundai.....</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="images/4SHX.gif" alt="cat" class="cat">
+
+    <button class="exit-btn" onclick="exitFile()">Bye....</button>
+
+    <script>
+        function exitFile() {
+            // This will attempt to close the current tab
+            window.close();
+            
+            // Fallback for browsers that block window.close()
+            if (!window.closed) {
+                alert("Thank you! You can now close this tab.");
+            }
+        }
+    </script>
+
+</body>
+</html>
